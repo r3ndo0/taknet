@@ -5,14 +5,15 @@ interface Props {
   value: boolean;
   valueSetter: React.Dispatch<React.SetStateAction<boolean>>;
   className?: string;
+  label: string;
 }
 
-function Toggle({ name, value, valueSetter, className }: Props) {
+function Toggle({ name, value, valueSetter, className, label }: Props) {
   const id = useId();
   return (
     <div className={className}>
-      <label className="flex gap-3" htmlFor={id}>
-        asdfasdf
+      <label className="flex items-center gap-1.5 cursor-pointer" htmlFor={id}>
+        {label}
         <span
           className={`w-12 h-6 ease-in-out flex p-1 relative duration-300 ${
             value
