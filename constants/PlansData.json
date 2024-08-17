@@ -1,0 +1,42 @@
+[
+    {
+        "page_views": 50000,
+        "monthly_price": 7.00,
+        "yearly_price": 63.00,
+        "unlimited_websites": false,
+        "ownership": true,
+        "email_reports": true
+    },
+    {
+        "page_views": 100000,
+        "monthly_price": 12.00,
+        "yearly_price": 118.00,
+        "unlimited_websites": true,
+        "ownership": true,
+        "email_reports": true
+    },
+    {
+        "page_views": 150000,
+        "monthly_price": 16.00,
+        "yearly_price": 144.00,
+        "unlimited_websites": true,
+        "ownership": true,
+        "email_reports": true
+    },
+    {
+        "page_views": 200000,
+        "monthly_price": 22.00,
+        "yearly_price": 198,
+        "unlimited_websites": true,
+        "ownership": true,
+        "email_reports": true
+    },
+    {
+        "page_views": 250000,
+        "monthly_price": 25.00,
+        "yearly_price": 225,
+        "unlimited_websites": true,
+        "ownership": true,
+        "email_reports": true
+    }
+]

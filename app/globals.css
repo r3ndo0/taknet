@@ -23,3 +23,39 @@
     text-wrap: balance;
   }
 }
+
+input[type='range'] {
+  -webkit-appearance: none;
+  height: 12px;
+  background: #e5e7eb;
+  border-radius: 5px;
+  background-image: linear-gradient(#99f6e4, #99f6e4);
+  background-repeat: no-repeat;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #14b8a6;
+  cursor: pointer;
+  box-shadow: 0 0 2px 0 #9ca3af;
+}
+
+
+input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #0d9488;
+  transition: ease-in-out .3s;
+}
+
+
+
