@@ -4,7 +4,6 @@ import React, { useEffect, useMemo, useState } from "react";
 import Toggle from "../Inputs/Toggle";
 import jsonData from "@/constants/PlansData.json";
 import SliderInput from "../Inputs/SliderInput";
-import { Dollar } from "../Icons/Dollar";
 import { GreenTick } from "../Icons/GreenTick";
 import { RedX } from "../Icons/RedX";
 import Link from "next/link";
@@ -55,6 +54,7 @@ function Plans() {
             value={monthly}
             valueSetter={setMonthly}
             label="Monthly Billing"
+            className="flex gap-2"
           />
           <p className="flex items-center gap-1.5">
             Yearly Billing{" "}
@@ -64,7 +64,6 @@ function Plans() {
           </p>
         </div>
       </div>
-
       <div className="flex flex-col  p-6 items-center justify-center">
         <p className="flex  items-center gap-3 mb-2">
           {selectedPlan?.unlimited_websites ? <GreenTick /> : <RedX />}
@@ -79,7 +78,7 @@ function Plans() {
         </p>
         <Link
           href="/"
-          className="rounded-full w-2/3 text-center py-3 mt-6 bg-gray-900 text-gray-300 hover:text-white hover:bg-gray-800 ease-in-out duration-300"
+          className="rounded-full w-2/3 text-center py-3 mt-6 bg-gray-700 text-gray-300 hover:text-white hover:bg-gray-900 ease-in-out duration-300"
         >
           Start My Trial
         </Link>
